@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: #000;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --blank line-- */
+.wrap {
+  margin: 0 auto;
+  max-width: 1296px;
+  padding: 12px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+nav .nav-logo {
+  width: 18.89%;
+  margin: 20px 0;
+}
+nav .close {
+  background: none;
+  cursor: pointer;
+}
+
+main {
+  margin: 192px auto;
+}
+main h1 {
+  font-size: 80px;
+  font-weight: 900;
+  color: #fff;
+  padding-bottom: 8px;
+}
+
+footer {
+  border-top: 1px solid white;
+  align-items: center;
+  padding: 32px 0;
+  flex-wrap: wrap;
+}
+footer p {
+  margin: 32px 0 24px 0;
+  font-weight: 700;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+@media (max-width: 992px) {
+  nav .nav-logo {
+    width: 50%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=menu.css.map */
