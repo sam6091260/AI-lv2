@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -47,9 +48,10 @@ img {
 .wrap {
   margin: 0 auto;
   max-width: 1296px;
-  padding: 0 24px;
+  padding: 0px 24px;
 }
 
+/* nav bar  */
 nav {
   display: flex;
   align-items: center;
@@ -74,153 +76,146 @@ nav .menu a {
   text-decoration: none;
 }
 
-main .landing-top h1 {
+.logo img {
+  width: 18.89%;
+  margin: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  color: #fff;
+}
+.navbar li a {
+  margin-left: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* landing page */
+.landing-top h1 {
   color: #fff;
   font-weight: 900;
   font-size: 120px;
   line-height: 1.2;
 }
-main .landing-top input {
+
+.landing-top2 {
+  margin-top: 80px;
+  width: 50%;
+  float: right;
+}
+
+.lt-h2 {
   color: #fff;
-  background-color: #000;
-  border: 1px solid #fff;
-  padding: 20px 40px;
-  border-radius: 16px;
-  font-size: 20px;
   font-weight: 900;
-  margin-top: 40px;
-  cursor: pointer;
+  font-size: 48px;
+  line-height: 1.2;
 }
-main .landing-top input:hover {
-  background-color: #fff;
-  color: #000;
-}
-main .animate {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 100px;
+
+.animate {
+  margin-top: 492px;
   background: transparent;
   overflow: hidden;
 }
-main .service {
+
+.h3_style {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+/* sectionA */
+.sectionA {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.title {
+  margin: 160px 0 80px 0;
+}
+
+.cards-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  color: #fff;
-  margin-top: 160px;
 }
-main .service .service-left {
-  font-size: 32px;
-  font-weight: 900;
-  margin-bottom: 24px;
-}
-main .service .service-right {
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 1.2;
-  max-width: 856px;
-}
-main .benefit {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 80px;
-}
-main .benefit .card {
-  padding: 80px 40px;
-  color: #fff;
+
+.card-price {
   border: 1px solid #525252;
   border-radius: 16px;
-  width: 26%;
-}
-main .benefit .card img {
-  height: 66.67px;
-  margin-bottom: 26.67px;
-}
-main .benefit .card h3 {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 900;
-}
-main .benefit .card p {
-  margin-top: 20px;
-  line-height: 1.5;
-}
-main .partner {
-  margin-top: 160px;
-}
-main .partner .partner-top {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 900;
-}
-main .partner .mask-left {
-  width: 13%;
-  height: 20%;
-  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
-  position: absolute;
-}
-main .partner .mask-right {
-  width: 13%;
-  height: 20%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 100%);
-  position: absolute;
-  right: 0;
-}
-main .partner .scrollable-container {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-main .partner .p-top {
-  margin: 80px 20px 0 20px;
-}
-main .partner .p-down {
-  margin: 20px 20px 160px 20px;
-}
-main .share-block {
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-  margin-bottom: 160px;
-}
-main .share-block .share {
+  width: 49%;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 26%;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  padding: 40px;
 }
-main .share-block .share .share-top ul {
+
+.cardT {
+  height: 31%;
+  flex-direction: column;
+  padding: 20px 0 136px 32px;
+}
+.cardT ul {
+  color: #F2F2F2;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.cardB {
   display: flex;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  border-top: 1px solid #525252;
+  padding: 20px 32px;
 }
-main .share-block .share .share-top li {
-  margin-right: 4px;
-}
-main .share-block .share .share-top p {
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-main .share-block .share .share-down {
+
+.cardB-l {
   display: flex;
   align-items: center;
 }
-main .share-block .share .share-down .br {
-  margin: 0 0 0 16px;
+.cardB-l p {
+  font-weight: 900;
 }
-main .share-block .share .share-down .br span {
-  font-weight: 700;
-}
-main .share-block .share .share-down .br p {
-  margin-top: 4px;
-  font-size: 14px;
-  line-height: 21px;
-}
-main .swiper {
-  display: none;
+.cardB-l span {
+  color: #525252;
 }
 
+.cardB-r a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.cardB-r span {
+  font-size: 15px;
+  margin-left: 12px;
+}
+
+/* sectionB */
+.sectionB {
+  display: flex;
+  justify-content: space-between;
+  margin: 160px 0;
+}
+
+.sb-r p {
+  color: #F2F2F2;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #525252;
+}
+.sb-r h2 {
+  margin-bottom: 24px;
+}
+
+/* big white */
 section {
   /* big white */
   /* tools content */
@@ -302,10 +297,18 @@ section .ul-list li a:hover {
   background: #F2F2F2;
   border-radius: 16px;
 }
-section .containerB {
+section .ul-list .active, section .ul-list .list-item.active:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 16px;
+}
+section .container-tool {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+section .container-tool .card-img {
+  overflow: hidden;
 }
 section .card {
   display: flex;
@@ -343,7 +346,7 @@ section .pBold {
   font-size: 16px;
   line-height: 1.5;
 }
-section .card-img {
+section .card-layer {
   overflow: hidden;
 }
 section .card img:hover {
@@ -376,6 +379,48 @@ section .pagenation a:hover {
   border-radius: 16px;
 }
 
+/* footer的總寬 */
+.footer-width {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+/* QA */
+.QA {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 160px;
+}
+
+.qa-l {
+  width: 40%;
+}
+
+.qa-r {
+  width: 60%;
+}
+.qa-r li {
+  display: flex;
+  align-items: center;
+  color: #F2F2F2;
+  border: 1px solid #525252;
+  border-radius: 16px;
+  padding: 20px 40px;
+  margin-bottom: 16px;
+}
+.qa-r li:hover {
+  background-color: #fff;
+  color: #000;
+}
+.qa-r h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 20px;
+}
+
+/* footer */
 footer {
   max-width: 1296px;
   margin: 0 auto;
@@ -474,7 +519,8 @@ footer .footer-bottom .bottom-R button {
   cursor: pointer;
 }
 
-@keyframes animate {
+/* animation */
+@keyframes landing-bottom {
   0%, 30% {
     transform: translateY(101%);
   }
@@ -486,19 +532,19 @@ footer .footer-bottom .bottom-R button {
   }
 }
 .img1 {
-  animation: animate 4s 2.5s both infinite;
+  animation: landing-bottom 4s 2.5s both infinite;
   animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 
 .img2 {
-  animation: animate 4s 2s both infinite;
+  animation: landing-bottom 4s 2s both infinite;
   animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 
 .img3 {
-  animation: animate 4s 1.5s both infinite;
+  animation: landing-bottom 4s 1.5s both infinite;
   animation-duration: 6s;
   animation-iteration-count: infinite;
 }
@@ -527,89 +573,35 @@ footer .footer-bottom .bottom-R button {
     top: 100px;
     right: 50px;
   }
-  main .animate {
-    margin-top: 180px;
-  }
-  main .landing .landing-top h1 {
+  .landing-top h1 {
     font-size: 48px;
     line-height: 1.2;
     margin-top: 40px;
   }
-  main .landing .animate img {
-    width: 33%;
+  .animate img {
+    width: 32%;
   }
-  main .service .service-left h2 {
-    font-size: 20px;
+  .lt-h2 {
+    font-size: 28px;
+    line-height: 1.2;
   }
-  main .service .service-right p {
+  .card-price {
+    width: 100%;
+  }
+  .section-R h2 {
     font-size: 32px;
     margin-bottom: 48px;
   }
-  main .benefit {
+  .sectionB {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 40px;
+    margin: 120px 0;
   }
-  main .benefit .card {
-    width: 100%;
-    margin: 12px 0;
+  .sectionB .sb-l {
+    margin-bottom: 48px;
   }
-  main .partner {
-    margin-top: 120px;
-  }
-  main .partner .partner-top h2 {
-    font-size: 20px;
-  }
-  main .share-block {
-    display: none;
-  }
-  main .swiper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0 156px;
-    color: #F2F2F2;
-    width: 100%;
-  }
-  main .swiper-slide {
-    display: flex;
-    justify-content: center;
-  }
-  main .share {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 40px;
-  }
-  main .share .share-top ul {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  main .share .share-top li {
-    margin-right: 4px;
-  }
-  main .share .share-top p {
-    line-height: 1.5;
-    margin-bottom: 20px;
-    height: 150px;
-  }
-  main .share .share-down {
-    display: flex;
-    align-items: center;
-  }
-  main .share .share-down .br {
-    margin: 0 0 0 16px;
-  }
-  main .share .share-down .br span {
-    font-weight: 700;
-  }
-  main .share .share-down .br p {
-    margin-top: 4px;
-    font-size: 14px;
-    line-height: 21px;
+  .sectionB .sb-r p {
+    font-size: 16px;
   }
   section .bg-white {
     border-radius: 20px;
@@ -631,12 +623,14 @@ footer .footer-bottom .bottom-R button {
     width: 100%;
     height: 100%;
   }
-  footer .switch h2 {
-    font-size: 32px;
-    text-align: center;
+  .QA {
+    flex-direction: column;
   }
-  footer .input-imgB {
-    margin-bottom: 80px;
+  .QA .qa-l {
+    margin-bottom: 24px;
+  }
+  .QA .qa-r {
+    width: 100%;
   }
   footer .footer-top {
     display: flex;
@@ -666,4 +660,4 @@ footer .footer-bottom .bottom-R button {
   footer .footer-bottom .bottom-R {
     margin-bottom: 24px;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_page.css.map */

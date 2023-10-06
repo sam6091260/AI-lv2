@@ -37,11 +37,15 @@ img {
     height: auto; }
 
 /* --blank line-- */
+
+
 .wrap {
     margin: 0 auto;
     max-width: 1296px;
-    padding: 0 24px;
+    padding: 0px 24px;
 }
+
+/* nav bar  */
 nav {
     display: flex;
     align-items: center;
@@ -69,181 +73,172 @@ nav {
     }
 }
 
-main {
-    .landing-top {
-        h1 {
-            color: #fff;
-            font-weight: 900;
-            font-size: 120px;
-            line-height: 1.2;
-        }
-        input {
-            color:#fff;
-            background-color: #000;
-            border: 1px solid #fff;
-            padding: 20px 40px;
-            border-radius: 16px;
-            font-size: 20px;
-            font-weight: 900;
-            margin-top: 40px;
-            cursor: pointer;
 
-            &:hover {
-                background-color: #fff;
-                color: #000;
-            }
-            
-        }
-    }
-    .animate {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 100px;
-        background: transparent;
-        overflow: hidden;
-    }
 
-    .service {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+.logo img {
+    width: 18.89%; 
+    margin: 20px 0;
+}
+
+
+.navbar{
+    display: flex;
+    color: #fff;
+    li a{
+        margin-left: 20px;
+        font-weight: 700;
         color: #fff;
-        margin-top: 160px;
-        
-        .service-left {
-            font-size: 32px;
-            font-weight: 900;
-            margin-bottom: 24px;
-        }
-        .service-right {
-            font-size: 48px;
-            font-weight: 900;
-            line-height: 1.2;
-            max-width: 856px;
-        }
-    }
-
-    .benefit {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 80px;
-
-        .card {
-            padding: 80px 40px;  
-            color: #fff;
-            border: 1px solid #525252;
-            border-radius: 16px;
-            width: 26%;
-
-            img {
-                height: 66.67px;
-                margin-bottom: 26.67px;
-            }
-
-            h3 {
-                color: #fff;
-                font-size: 32px;
-                font-weight: 900;
-            }
-
-            p{
-                margin-top: 20px;
-                line-height: 1.5;
-            }
-            
-        }
-    }
-
-    .partner {
-        margin-top: 160px;
-
-        .partner-top {
-            color: #fff;
-            font-size: 32px;
-            font-weight: 900;
-        }
-
-        .mask-left {
-            width: 13%;
-            height: 20%;
-            background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
-            position: absolute;
-          }
-        .mask-right {
-            width: 13%;
-            height: 20%;
-            background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 100%);
-            position: absolute;
-            right: 0;
-          }
-        .scrollable-container {
-            overflow-x: auto;
-            white-space: nowrap;
-          }
-        
-        .p-top {
-            margin: 80px 20px 0 20px;
-        }
-        .p-down {
-            margin: 20px 20px 160px 20px;
-        }
-    }
-
-    .share-block {
-        display: flex;
-        justify-content: space-between;
-        color: #fff;
-        margin-bottom: 160px;
-
-        .share {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 26%;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
-            padding: 40px;
-
-            .share-top {
-                ul {
-                    display: flex;
-                    margin-bottom: 20px;
-                }
-                li {
-                    margin-right: 4px;
-                 }
-                 p {
-                    line-height: 1.5;
-                    margin-bottom: 20px;
-                }
-            }
-
-            .share-down{
-                display: flex;
-                align-items: center;
-
-                .br {
-                    margin: 0  0 0 16px;
-
-                    span {
-                        font-weight: 700;
-                    }
-
-                    p {
-                        margin-top: 4px;
-                        font-size: 14px;
-                        line-height: 21px;
-                    }
-                    
-                }
-            }
-        }
-    }
-    .swiper {
-        display: none;
+        text-decoration: none;
     }
 }
 
+
+/* landing page */
+
+.landing-top {
+    h1 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 1.2;
+    }
+}
+
+.landing-top2 {
+
+    margin-top: 80px; 
+    width: 50%;
+    float: right;
+}
+
+.lt-h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.2;
+
+
+}
+
+.animate{
+    margin-top: 492px;
+    background: transparent;
+    overflow: hidden;
+}
+
+
+.h3_style {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+
+/* sectionA */
+
+.sectionA {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.title {
+    margin: 160px 0 80px 0;
+}
+
+.cards-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-price {
+    border: 1px solid #525252;
+    border-radius: 16px;
+    width: 49%;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardT {
+    height: 31%;
+    flex-direction: column;
+    padding: 20px 0 136px 32px;
+    ul{
+        color: #F2F2F2;
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 400;
+        margin-top: 12px;
+    }
+}
+
+
+.cardB {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #525252;
+    padding: 20px 32px;
+
+}
+
+.cardB-l {
+    display: flex;
+    align-items: center;
+    p {
+        font-weight: 900;
+    }
+    span {
+        color: #525252;
+    }
+}
+
+
+
+.cardB-r {
+    a{
+        text-decoration: none;
+        color:  #FFFFFF;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+    span {
+        font-size: 15px;
+        margin-left: 12px;
+    }
+}
+
+
+
+
+/* sectionB */
+
+.sectionB {
+    display: flex;
+    justify-content: space-between;
+    margin: 160px 0;
+}
+
+.sb-r {
+    p {
+        color: #F2F2F2;
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin-bottom: 80px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #525252;
+    }
+    h2 {
+        margin-bottom: 24px;
+    }
+    
+}
+
+/* big white */
 section {
     /* big white */
 
@@ -336,15 +331,23 @@ section {
             }
             
         }
+        .active, .list-item.active:hover {
+            color: #ffffff;
+            background-color: #000000;
+            border-radius: 16px;
+          }
         
     }
 
     /* tools list */
 
-    .containerB {
+    .container-tool {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        .card-img {
+            overflow: hidden;
+        }
     }
 
     .card {
@@ -389,7 +392,7 @@ section {
         line-height: 1.5;
     }
 
-    .card-img {
+    .card-layer {
         overflow: hidden;
     }
 
@@ -427,6 +430,52 @@ section {
     }
 }
 
+
+
+/* footer的總寬 */
+.footer-width {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+/* QA */
+.QA {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 160px;
+}
+
+.qa-l {
+    width: 40%;
+}
+
+.qa-r {
+    width: 60%;
+    li {
+        display: flex;
+        align-items: center;
+        color: #F2F2F2;
+        border: 1px solid #525252;
+        border-radius: 16px;
+        padding: 20px 40px;
+        margin-bottom: 16px;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 900;
+        margin-left: 20px;
+    }
+}
+
+
+
+/* footer */
 footer {
 
     max-width: 1296px;
@@ -489,7 +538,6 @@ footer {
             font-size: 80px;
             line-height: 1.2;
             color: #fff;
-            
         }
     
         .top-R img{
@@ -548,7 +596,10 @@ footer {
 }
 
 
-@keyframes animate {
+
+/* animation */
+
+@keyframes landing-bottom {
     0%, 30% {
         transform: translateY(101%);
     }
@@ -562,22 +613,24 @@ footer {
 }
 
 .img1 {
-    animation: animate 4s 2.5s both infinite;
+    animation: landing-bottom 4s 2.5s both infinite;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
 .img2 {
-    animation: animate 4s 2s both infinite;
+    animation: landing-bottom 4s 2s both infinite;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
 .img3 {
-    animation: animate 4s 1.5s both infinite;
+    animation: landing-bottom 4s 1.5s both infinite;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
+
+
 
 @media(max-width: 992px) {
 
@@ -612,124 +665,48 @@ footer {
         }
 
     }
+    
 
-    main {
-
-        .animate {
-            margin-top: 180px;
-        }
-
-        .landing {
-            .landing-top {
-                h1{
-                    font-size: 48px;
-                    line-height: 1.2;
-                    margin-top: 40px;
-                }
-            }
-            .animate {
-                img {
-                    width: 33%;
-                }
-            }
-        }
-
-        .service {
-            .service-left{
-                h2{
-                    font-size: 20px;
-                }
-            }
-            .service-right {
-                p {
-                    font-size: 32px;
-                    margin-bottom: 48px;
-                }
-            }
-        }
-
-        .benefit {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 40px;
-
-            .card {
-                width: 100%;
-                margin: 12px 0;
-            }
-        }     
-        
-        .partner {
-            margin-top: 120px;
-            .partner-top {
-                h2{
-                    font-size: 20px;
-                }
-            }
-        }
-
-        .share-block {
-            display: none;
-        }
-        .swiper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 0 156px;
-            color: #F2F2F2;
-            width: 100%;
-        }
-
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-        }
-
-        .share {
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
-            padding: 40px;
-
-            .share-top {
-                ul {
-                    display: flex;
-                    margin-bottom: 20px;
-                }
-                li {
-                    margin-right: 4px;
-                 }
-                 p {
-                    line-height: 1.5;
-                    margin-bottom: 20px;
-                    height: 150px;
-                }
-            }
-
-            .share-down{
-                display: flex;
-                align-items: center;
-
-                .br {
-                    margin: 0  0 0 16px;
-
-                    span {
-                        font-weight: 700;
-                    }
-
-                    p {
-                        margin-top: 4px;
-                        font-size: 14px;
-                        line-height: 21px;
-                    }
-                    
-                }
-            }
-        } 
+    .landing-top h1{
+        font-size: 48px;
+        line-height: 1.2;
+        margin-top: 40px;
     }
+
+    .animate img{
+        width: 32%;
+    }
+    
+    .lt-h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .card-price {
+        width: 100%;
+    }
+
+
+    .section-R h2 {
+        font-size: 32px;
+        margin-bottom: 48px;
+    }
+
+    .sectionB {
+        display: flex;
+        flex-direction: column;
+        margin: 120px 0;
+        .sb-l {
+            margin-bottom: 48px;
+        }
+    
+        .sb-r p {
+            font-size: 16px;
+        }
+    
+    }
+    
+
 
     section {
         .bg-white {
@@ -760,15 +737,17 @@ footer {
         }
     }
 
-    footer {
-        .switch h2{
-            font-size: 32px;
-            text-align: center;
+    .QA {
+        flex-direction: column;
+        .qa-l {
+            margin-bottom: 24px;
         }
-        .input-imgB {
-            margin-bottom: 80px;
+        .qa-r {
+            width: 100%;
         }
+    }
 
+    footer {
         .footer-top {
         display: flex;
         flex-direction: column-reverse;
@@ -783,9 +762,12 @@ footer {
             }
         }
     }
-}
+   
+  }
 
-@media (max-width: 767px) {
+
+
+  @media (max-width: 767px) {
 
     section {
         .card {

@@ -47,7 +47,7 @@ img {
 .wrap {
   margin: 0 auto;
   max-width: 1296px;
-  padding: 12px;
+  padding: 0px 24px;
 }
 
 nav {

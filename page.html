@@ -19,7 +19,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./style_page.css" />
+    <link rel="stylesheet" href="./style/style_page.css" />
   </head>
   <body>
     <div class="container">
@@ -185,13 +185,21 @@
 
               <div class="ul-list">
                 <ul>
-                  <li><a href="#">全部</a></li>
-                  <li><a href="#">聊天</a></li>
-                  <li><a href="#">影像辨識</a></li>
-                  <li><a href="#">翻譯</a></li>
-                  <li><a href="#">行銷</a></li>
-                  <li><a href="#">客服</a></li>
-                  <li><a href="#">生產力</a></li>
+                  <li><a href="#" class="list-item" id="all">全部</a></li>
+                  <li><a href="#" class="list-item" id="sales">行銷文案</a></li>
+                  <li>
+                    <a href="#" class="list-item" id="translate">翻譯助手</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-item" id="knowledge">程式知識</a>
+                  </li>
+                  <li><a href="#" class="list-item" id="daily">生活應用</a></li>
+                  <li>
+                    <a href="#" class="list-item" id="aihost">虛擬客服</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-item" id="conversation">問答服務</a>
+                  </li>
                 </ul>
               </div>
 
@@ -203,7 +211,13 @@
 
             <!-- tools list -->
             <div class="tool-list">
-              <ul class="containerB">
+              <ul class="container-tool" id="list">
+                <!-- <li class="card" id="list"></li>
+                <li class="card" id="list"></li>
+                <li class="card" id="list"></li>
+                <li class="card" id="list"></li>
+                <li class="card" id="list"></li>
+                <li class="card" id="list"></li> -->
                 <li class="card">
                   <div class="card-img">
                     <img
@@ -224,7 +238,6 @@
                     <a href="#"><span class="material-icons"> share </span></a>
                   </div>
                 </li>
-                <!-- <li class="card" id="list"></li> -->
 
                 <li class="card">
                   <div class="card-img">
@@ -419,6 +432,8 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <script src="./all.js"></script>
   </body>
 </html>

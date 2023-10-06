@@ -21,7 +21,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
     <title>AI工具王</title>
   </head>
   <body>
@@ -35,7 +35,7 @@
           <img src="./img/hamburger.png" alt="hamburger" />
         </button>
         <div class="menu">
-          <ul>
+          <ul class="menu-item">
             <li><a href="./index.html">首頁</a></li>
             <li><a href="./page.html">定價</a></li>
           </ul>
@@ -306,7 +306,12 @@
             <h2>這些超酷的應用，都來自 AI工具王</h2>
             <div class="search">
               <a href="#"> <span class="material-icons"> search </span></a>
-              <input class="tools-input" type="input" value="輸入關鍵字搜尋" />
+              <input
+                class="tools-input"
+                type="input"
+                placeholder="輸入關鍵字搜尋"
+                id="search-input"
+              />
             </div>
 
             <!-- tools search -->
@@ -318,25 +323,39 @@
 
               <div class="ul-list">
                 <ul>
-                  <li><a href="#">全部</a></li>
-                  <li><a href="#">聊天</a></li>
-                  <li><a href="#">影像辨識</a></li>
-                  <li><a href="#">翻譯</a></li>
-                  <li><a href="#">行銷</a></li>
-                  <li><a href="#">客服</a></li>
-                  <li><a href="#">生產力</a></li>
+                  <li><a href="#" class="list-item" id="all">全部</a></li>
+                  <li><a href="#" class="list-item" id="sales">行銷文案</a></li>
+                  <li>
+                    <a href="#" class="list-item" id="translate">翻譯助手</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-item" id="knowledge">程式知識</a>
+                  </li>
+                  <li><a href="#" class="list-item" id="daily">生活應用</a></li>
+                  <li>
+                    <a href="#" class="list-item" id="aihost">虛擬客服</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-item" id="conversation">問答服務</a>
+                  </li>
                 </ul>
               </div>
 
-              <div class="input-img">
-                <input type="button" value="由新到舊" />
+              <div class="input-img btn-sort">
+                <button type="button" id="sort-title">由新到舊</button>
+                <!-- <input type="button" value="由新到舊" /> -->
                 <span class="material-icons"> expand_more</span>
+
+                <div class="input-sort-list">
+                  <button class="sort-item" type="button">由新到舊</button>
+                  <button class="sort-item" type="button">由舊到新</button>
+                </div>
               </div>
             </div>
 
             <!-- tools list -->
             <div class="tool-list">
-              <ul class="containerB">
+              <ul class="container-tool" id="list">
                 <li class="card">
                   <div class="card-img">
                     <img
@@ -357,7 +376,6 @@
                     <a href="#"><span class="material-icons"> share </span></a>
                   </div>
                 </li>
-                <!-- <li class="card" id="list"></li> -->
 
                 <li class="card">
                   <div class="card-img">
@@ -470,17 +488,17 @@
             </div>
             <!-- tools pagenation -->
             <div class="pagenation">
-              <ul>
-                <li><a href="#">1</a></li>
+              <ul class="page-list">
+                <!-- <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
+                <li><a href="#">5</a></li> -->
+                <!-- <li>
                   <a href="#"
                     ><span class="material-icons"> navigate_next </span></a
                   >
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -531,6 +549,7 @@
       </div>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <script src="./all.js"></script>
   </body>
 </html>
