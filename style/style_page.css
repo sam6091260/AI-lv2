@@ -560,18 +560,28 @@ footer .footer-bottom .bottom-R button {
     height: 150%;
     margin-left: 50%;
   }
-  nav .open li {
-    top: 100%;
-    width: 100%;
-    transition: 0.3s ease-out;
-    transform: scale(1, 0);
-    transform-origin: top;
+  nav .menu {
+    display: none;
   }
-  nav .menu ul {
-    transform: scale(1, 1);
+  nav .menu.open {
+    display: block;
+  }
+  nav .menu.open ul {
+    flex-direction: column;
+    border: 1px solid #fff;
     position: absolute;
-    top: 100px;
-    right: 50px;
+    padding: 30px;
+    right: 5%;
+    transform: scale(1, 1);
+    margin-top: 8%;
+  }
+  nav .menu.open li {
+    margin: 20px;
+    display: block;
+    transition: 0.3s ease-out;
+  }
+  nav .menu.open li:hover {
+    opacity: 0.7;
   }
   .landing-top h1 {
     font-size: 48px;

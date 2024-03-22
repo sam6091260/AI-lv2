@@ -6,11 +6,22 @@ $(function () {
 });
 
 // nav bar增加class以運行css樣式
-const hbgBtn = document.querySelector(".hbgIcon");
-const nav = document.querySelector(".menu-item");
-hbgBtn.addEventListener("click", () => {
-  nav.classList.toggle("open");
+document.querySelector(".hbgIcon").addEventListener("click", function () {
+  const menu = document.querySelector(".menu");
+  const icon = this.querySelector("img"); // 假设图标是一个 <img> 元素
+
+  menu.classList.toggle("open");
+
+  if (menu.classList.contains("open")) {
+    icon.src = "./img/close_white_24dp.svg"; // 叉叉图标的路径
+  } else {
+    icon.src = "./img/menu_white_24dp.svg"; // 汉堡图标的路径
+  }
 });
+
+// document.querySelector(".hbgIcon").addEventListener("click", function () {
+//   document.querySelector(".menu").classList.toggle("open");
+// });
 
 // 三欄式卡片rwd拖拉效果
 const swiper = new Swiper(".swiper", {
